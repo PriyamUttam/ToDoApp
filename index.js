@@ -1,0 +1,15 @@
+const inputBox = document.getElementById("input-data");
+const listContainer = document.getElementById("list-container");
+
+
+function addTask(){
+        if(inputBox.value === ''){
+            alert("Please Add Something In Your Task First!");
+        }
+        else{
+            let li =document.createElement("li");
+            li.innerHTML = inputBox.value;
+            listContainer.appendChild(li);
+        }
+    }
+
